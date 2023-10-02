@@ -1,2 +1,10 @@
-fdsuhhdfsodfshdfsfdsohsfdisfd
-fesjhfd8s08fsd7dsf
+- SISTEMAS INFORMATICOS:
+
+¿Cual es la diferencia entre un núcleo, la unidad de control y la unidad aritmético-lógica?:
+
+- Núcleo: Se encargan de ejecutar instrucciones y gestionar tareas. También pueden ejecutar instrucciones en paralelo (si hay varios nucleos) en cpus mas modernas.
+  Hay que recalcar que cada nucleo tiene su propia Unidad de Control y ALU, que son los siguientes:
+
+  -> Unidad de Control: Este se encarga de coordinar (tiene que confirmar que las instrucciones se den en el orden correcto) y supervisar las instrucciones que se dan en la CPU.
+  -> Unidad aritmetico-logica: Este realiza las operaciones matematicas y logicas. Las ejecuta en los datos que fluyen por la CPU.
+
