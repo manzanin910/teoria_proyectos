@@ -1,0 +1,55 @@
+- PROGRAMA INFORMATICO => UNIDAD 1: 
+
+>>>> [Software]:
+
+- Segun el tipo de tarea que realiza:
+
+ -> Software de sistema (importante la BIOS).
+ -> Software de aplicacion.
+ -> Software de programacion.
+
+- Segun el metodo de distribucion:
+
+ -> Shareware.
+ -> Freeware.
+ -> Adware.
+ -> Software multimedia.
+ -> Software de uso especifico.
+
+
+
+
+>>>> [licencias de software]:
+
+- Licencias de Software: Definición 
+  -> Software Libre.
+  -> Software Propietario.
+  -> Software de dominio publico.
+
+
+
+
+>>>> [concepto de programa]:
+
+- Programa informatico.
+
+
+
+
+>>>> [programa y componentes del SI]:
+
+- Segun la arquitectura de Von Neumann, la CPU consta de varias partes: La unidad de control (UC O CU), la unidad aritmetico-logica (ALU) y los registros.
+  -> Unidad de Control.
+  -> Unidad aritmetico-logica.
+  -> Registros.
+
+- Entender la serie de registros que engloban la Unidad de Control.
+  -> Contador de Programa (CP).
+  -> Registro de Instruccion (RI).
+  -> Registro de Direccion de Memoria (RDM).
+  -> Registro de Intercambio de Memoria (RIM).
+  -> Decodificador de Instruccion (DI).
+  -> El Reloj.
+  -> El Secuenciador.
+
+- Entender la fase de busqueda y la fase de ejecucion. Describir los pasos para cada orden.

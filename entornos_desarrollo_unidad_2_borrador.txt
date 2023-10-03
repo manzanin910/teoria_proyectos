@@ -1,0 +1,58 @@
+- ENTORNOS DE DESARROLLO => UNIDAD 2:
+
+>>>> [introduccion a los lenguajes de programacion y demas]:
+
+¿Que es un programa informatico?: conjunto de instrucciones que se escriben en un lenguaje de programacion.
+
+¿Que es un lenguaje?: conjunto de reglas y caracteres. Todas esas reglas se combinan para que tengan uan ejecucion determinada en el pc.
+
+¿Que tiene un lenguaje?:
+
+ -> vocabulario => conjunto de simbolos permitidos en el lenguaje.
+ -> sintaxis => reglas que indican como se tienen que construir las construcciones con los simbolos (como usar los simbolos).
+ -> semantica => reglas que van a definir los significados de las construcciones del lenguaje.
+
+¿En que se clasifican los lenguajes segun su nivel de abstraccion?:
+
+- Cuanto mas bajo este el nivel de abstraccion, mas facil de entender es para la maquina y mas dificil para nosotros. Y cuanto mas alto es
+  lo contrario, mas facil de entender por el ser humano pero mas dificil para la maquina.
+
+ -> Lenguajes de bajo nivel: Se acercan al funcionamiento de un PC. El lenguaje de bajo nivel por excelencia es el lenguaje maquina (binario).
+    Si una persona programa en bajo nivel se suele usar un ensamblador (Assembler), no se programa con codigo maquina directamente.
+
+    - El lenguaje ensamblador es exclusivo para cada procesador, es decir, es especifico. Es dificil de aprender. Se programa con él usando nombres
+      nemotecnicos y se trabaja directamente con LOS REGISTROS de memoria fisica de la memoria. Se tiene que pasar a binario igualmente .
+
+    - MOV para mover un dato, o INT para numeros y demas... (muy distinto a un lenguaje de alto nivel).
+
+
+ -> Lenguajes de nivel medio: Se parecen a los de bajo nivel pero tambien tienen caracteristicas de nivel alto. Un ejemplo es C (para crear aplicaciones
+    o sistemas operativos) o Rust. Te permiten gestionar la memoria pero con las facilidades de un lenguaje de nivel alto.
+
+
+ -> lenguajes de alto nivel: Cercanos a la forma de pensar de un ser humano. Con palabras del lenguaje natural, como el ingles. Para ejecutarlos
+    se necesta un compilador o interprete, para traducir el lenguaje a lenguaje maquina => Esto ocurre SIEMPRE, en cualquier nivel, a no ser que escribamos
+    en lenguaje maquina (no es el caso). No dependen del hardware (no como assembler que depende COMPLETAMENTE del hardware) y no se requiere ningun
+    conocimiento sobre codigo maquina.
+ 
+
+¿Como se clasifican segun su forma de ejecucion?:
+
+ -> Lenguajes compilados:
+
+    - Un compilador es un programa que puede leer un programa en un lenguaje (fuente) y traducirlo a otro (destino). Este puede devolver errores si el
+      programa no esta bien escrito, usando sintaxis incorrecta. Si no devuelve el resultado esperado habria que modificar el programa.
+
+    - Codigo fuente (nuestro programa) => compilador => codigo destino (suele ser binario);
+
+ -> Lenguajes interpretados:
+
+    - Codigo fuente (alto nivel) => interprete => No genera codigo destino, nos muestra solo el resultado.
+
+¿Como se clasifican segun el paradigma de programacion?: hacia lo que queremos programar:
+
+ -> Lenguajes imperativos
+ -> Lenguajes funcionales
+ -> Lenguajes logicos
+ -> Lenguajes estructurados
+ -> Lenguajes orientados a objetos

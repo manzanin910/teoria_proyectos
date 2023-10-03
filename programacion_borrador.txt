@@ -1,0 +1,7 @@
+- En conversiones el pequeño se mete en el grande => float a double...
+
+- ¿Diferencia entre List y ArrayList? => porque se usa List<clase envolvente> nombre = [new ArrayList<>();] => ¿porque no se pone List?.
+
+- Saber bien para que sirve el comodin => [List<?>] => se pueden meter todo tipo de objetos, pero realmente, ¿cual es su uso?.
+
+- Saber bien que es un String.
