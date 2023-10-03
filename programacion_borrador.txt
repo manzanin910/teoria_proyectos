@@ -1,7 +1,45 @@
-- En conversiones el pequeño se mete en el grande => float a double...
+- DUDAS SOBRE PROGRAMACIÓN BORRADOR:
+
+-> Sobre las conversiones, tenemos que tener en cuenta los dos tipos de conversiones que hay en Java:
+   - Conversión implícita: Para pasar de uno mas pequeño a mas grande, no usa casting => int var = 34; long var2 = var;
+   - Conversión explícita: Se usa para pasar de un tipo mas grande a uno mas pequeño (hay que tener en cuenta que si usas esto estas forzando una conversion y puedes perder exactitud, no acaba bien a veces).
+                            Ejemplo: long var = 4500L; int var2 = (int) var;
+
+    -> Hay que tener en cuenta que cuando queremos diferenciar long o float de int o double, necesitamos usar 'L' o 'F' al final de cada numero:
+      - float var = 35678; int var2 = (int) var; => ERROR. Corrección: float var = 35678F; int var2 = (int) var;
+
+<-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------->
 
 - ¿Diferencia entre List y ArrayList? => porque se usa List<clase envolvente> nombre = [new ArrayList<>();] => ¿porque no se pone List?.
 
+- Lo primero hay que entender que es List y que es ArrayList:
+  -> List es una interfaz de Java y no es posible instanciarla. Ahora bien, las interfaces las podemos tratar como elementos superiores a las clases. Estos proporcionan una forma de definir una estructura común         para un grupo de clases relacionadas. Se puede pensar que la relacion de herencia entre clases base y superclases es muy parecida al sistema de implementación de interfaz en una clase, pero hay ciertas             diferencias. Las interfaces definen un contrato que las clases deben seguir, mientras que la herencia se utiliza para extender una clase base.
+
+  -> ArrayList es un ejemplo de una clase que implementa la interfaz List. Mientras que una interfaz solo proporciona una definición de métodos (IMPORTANTE: sin implementación concreta), ArrayList es una clase          concreta que puedes instanciar y que actúa como una lista funcional, al igual que LinkedList.
+
+  -> Ojo, cuando usas List<clase envolvente> nombre = new ArrayList<>(); no estás implementando una clase en forma de instancia cuando usas List, sino que estás utilizando una referencia de tipo List para trabajar      con diferentes implementaciones de listas de manera genérica.
+
+- ¿Qué hace una interfaz realmente?:
+
+  -> 1. Una interfaz en Java define un conjunto de métodos sin implementación (métodos abstractos) que representan un contrato. Estos métodos tienen declaraciones, pero no contienen ninguna lógica real.
+
+  -> 2. Cuando una clase implementa una interfaz, está aceptando el contrato especificado por esa interfaz. Esto significa que la clase se compromete a proporcionar implementaciones concretas para todos los                métodos declarados en la interfaz.
+
+<-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------->
+
 - Saber bien para que sirve el comodin => [List<?>] => se pueden meter todo tipo de objetos, pero realmente, ¿cual es su uso?.
 
-- Saber bien que es un String.
+- ¿Para qué sirve un comodin o wildcard?: Sirve para crear una referencia a una lista que puede contener elementos de cualquier tipo, incluyendo clases envolventes como Integer, Double, etc., o incluso objetos de    clases no envolventes. Ahora bien, hay una serie de problemas y restricciones con el uso de este cacharro mágico:
+
+  -> 1. Los elementos del comodin solo pueden ser tratados como Object. Esto quiere decir que no puedes realizar operaciones especificas de tipos sin una conversion forzada (explícita).
+  -> 2. En un comodin no pueden añadir en el sentido de usar un metodo de 'add' como en una lista con tipos, hay que recurrir a magia arcana como usar Arrays.asList() => y despues adAll.
+  -> 3. Solo es recomendable para leer, si es para añadir es mejor usar el List de tipo convencional (List<T>).
+
+<--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------->
+
+- ¿Qué es realmente un String?:
+
+  -> Un String es un objeto que representa las cadenas de caracteres. Se le llama cadena literal porque su contenido es inmutable, esto quiere decir que no admite modificación. Lo ideal a la hora de querer              modificar un String es usar el famoso StringBuilder, este también es una cadena de caracteres pero esta vez dinámica, es decir, mutable. También, hay que entender que String NO ES UNA CLASE ENVOLVENTE DE           NINGÚN TIPO PRIMITIVO.
+
+<--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------->
+
