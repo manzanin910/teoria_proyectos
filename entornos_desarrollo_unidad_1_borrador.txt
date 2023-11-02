@@ -1,5 +1,7 @@
 - PROGRAMA INFORMATICO => UNIDAD 1: 
 
+---------------------------------------------------------- DIA 1
+
 >>>> [Software]:
 
 - Segun el tipo de tarea que realiza:
@@ -16,7 +18,7 @@
  -> Software multimedia.
  -> Software de uso especifico.
 
-
+---------------------------------------------------------- DIA 2
 
 
 >>>> [licencias de software]:
@@ -27,13 +29,11 @@
   -> Software de dominio publico.
 
 
-
-
 >>>> [concepto de programa]:
 
 - Programa informatico.
 
-
+---------------------------------------------------------- DIA 3
 
 
 >>>> [programa y componentes del SI]:
@@ -51,5 +51,7 @@
   -> Decodificador de Instruccion (DI).
   -> El Reloj.
   -> El Secuenciador.
+
+---------------------------------------------------------- DIA 4
 
 - Entender la fase de busqueda y la fase de ejecucion. Describir los pasos para cada orden.
